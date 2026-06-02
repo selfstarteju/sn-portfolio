@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SN Cinematic | Stories That Feel Like Cinema</title>
+    <meta name="description" content="Ultra-premium cinematic films, brand commercials, and high-fashion visual storytelling by SN Cinematic. Designed for discerning clients who demand the highest-end production value.">
+    <!-- Google Fonts: Cinzel for luxurious serif headers, Plus Jakarta Sans for high-fashion copy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome 6 Icons for minimalist iconography -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Analog 35mm Film Grain Overlay -->
+    <div class="film-grain"></div>
+
+    <!-- Ultra-Premium Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+        <span class="cursor-text">VIEW</span>
+    </div>
+
+    <!-- Mouse Ambient Glow Layer -->
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <!-- Luxurious Loader Screen -->
+    <div class="loader-overlay" id="loader-overlay">
+        <div class="loader-container">
+            <div class="loader-logo">
+                <span class="logo-text">SN</span>
+                <span class="logo-sub">CINEMATIC</span>
+            </div>
+            <div class="loader-progress-bar">
+                <div class="loader-progress" id="loader-progress"></div>
+            </div>
+            <div class="loader-status-row">
+                <span class="loader-status">Preloading Anamorphic Reels...</span>
+                <span class="loader-num" id="loader-num">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Widescreen Header / Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="nav-container">
+            <a href="#" class="nav-logo magnet-target">
+                <span class="gold-text">SN</span> CINEMATIC
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active magnet-target">Home</a></li>
+                    <li><a href="#about" class="nav-link magnet-target">Director</a></li>
+                    <li><a href="#portfolio" class="nav-link magnet-target">Reels</a></li>
+                    <li><a href="#services" class="nav-link magnet-target">Services</a></li>
+                    <li><a href="#why-choose-me" class="nav-link magnet-target">Timeline</a></li>
+                    <li><a href="#testimonials" class="nav-link magnet-target">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link magnet-target">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-nav-cta magnet-target">Book A Shoot</a>
+                <button class="mobile-toggle magnet-target" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION 1: HERO (WITH CAMERA VIEWPORT OVERLAYS) -->
+        <section id="hero" class="hero-section">
+            <div class="hero-video-container">
+                <video autoplay loop muted playsinline class="hero-video" id="hero-video" preload="auto">
+                    <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054f4d8237e32df500c95ccab696dbb&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+
+            <!-- ARRI-Style Camera Viewfinder Overlay -->
+            <div class="camera-viewfinder">
+                <div class="vf-corner top-left"></div>
+                <div class="vf-corner top-right"></div>
+                <div class="vf-corner bottom-left"></div>
+                <div class="vf-corner bottom-right"></div>
+                
+                <div class="vf-top-bar">
+                    <span class="vf-rec-dot"><span class="dot-pulse"></span> REC</span>
+                    <span class="vf-timecode" id="hero-timecode">00:00:00:00</span>
+                    <span class="vf-fps">23.976 fps</span>
+                </div>
+                
+                <div class="vf-center-focus">[  +  ]</div>
+                
+                <div class="vf-bottom-bar">
+                    <span class="vf-resolution">4K DCI</span>
+                    <span class="vf-aspect">2.39:1</span>
+                    <span class="vf-shutter">180°</span>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-badge animate-fade">
+                    <i class="fa-solid fa-camera-movie gold-text"></i> Luxury Film Production House
+                </div>
+                <!-- Netflix-style Clip Mask Reveal Headers -->
+                <h1 class="hero-heading title-reveal animate-text">
+                    <span>Stories That Feel</span>
+                    <span>Like Cinema.</span>
+                </h1>
+                <p class="hero-subheading animate-fade">Wedding Films • Brand Commercials • Cinematic Reels • Creative Storytelling</p>
+                <div class="hero-buttons animate-fade">
+                    <a href="#portfolio" class="btn btn-primary magnet-target">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary magnet-target">Book A Shoot</a>
+                </div>
+            </div>
+
+            <!-- Social Proof Banner -->
+            <div class="social-proof-banner">
+                <div class="proof-item">
+                    <span class="proof-numberCounter" data-target="1700">1.7K+</span>
+                    <span class="proof-label">Audience Followers</span>
+                </div>
+                <div class="divider"></div>
+                <div class="proof-item">
+                    <span class="proof-numberCounter" data-target="35">35+</span>
+                    <span class="proof-label">Premium Projects</span>
+                </div>
+                <div class="divider"></div>
+                <div class="proof-item">
+                    <span class="proof-label"><i class="fa-solid fa-award gold-text"></i> High-End Cinematic Standard</span>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator magnet-target" aria-label="Scroll Down">
+                <div class="mouse-icon">
+                    <div class="wheel animate-bounce"></div>
+                </div>
+            </a>
+        </section>
+
+        <!-- SECTION 2: ABOUT (MEET SN CINEMATIC) -->
+        <section id="about" class="about-section">
+            <div class="container grid-2">
+                <div class="about-visual" id="about-visual">
+                    <div class="image-wrapper glass-card">
+                        <!-- Custom generated professional portrait -->
+                        <img src="assets/images/portrait.png" alt="SN Cinematic Director" class="portrait-img">
+                        <!-- Floating Glass Cards with Champagne accents -->
+                        <div class="glass-overlay-card top-left animate-on-scroll">
+                            <i class="fa-solid fa-camera-retro gold-text"></i>
+                            <div>
+                                <h4>Premium Cinema Rig</h4>
+                                <p>ARRI Look • RED Camera Specs</p>
+                            </div>
+                        </div>
+                        <div class="glass-overlay-card bottom-right animate-on-scroll">
+                            <i class="fa-solid fa-film gold-text"></i>
+                            <div>
+                                <h4>Story First</h4>
+                                <p>Capturing the Soul of the Moment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-content">
+                    <span class="section-tagline"><i class="fa-solid fa-signature gold-text"></i> THE CREATIVE DIRECTOR</span>
+                    <h2 class="section-title title-reveal animate-text">
+                        <span>Meet SN</span>
+                        <span>Cinematic</span>
+                    </h2>
+                    <p class="about-lead-para text-glow">I transform ordinary moments into premium, cinematic masterpieces.</p>
+                    <p class="about-body">
+                        From grand weddings and exclusive events to high-converting brand commercials and creative Instagram reels, every single frame is designed with profound emotion, rigorous storytelling techniques, and professional-grade visual aesthetics. 
+                    </p>
+                    <p class="about-body">
+                        My philosophy bypasses generic recordings. I target the <em>soul</em> of the memory. By combining slow-motion Prime lenses, delicate color grading, custom sound design, and anamorphic formatting, your project isn't just captured—it is immortalized.
+                    </p>
+                    <div class="signature-box">
+                        <div class="signature-line"></div>
+                        <span class="signature-name">SN Cinematic</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: FEATURED WORK (AWWWARDS-STYLE HORIZONTAL SCROLL) -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="portfolio-intro container text-center">
+                <span class="section-tagline"><i class="fa-regular fa-star gold-text"></i> RELEASES</span>
+                <h2 class="section-title title-reveal animate-text">
+                    <span>Featured Work</span>
+                </h2>
+                <p class="section-desc">Explore a curated horizontal showcase of our premium widescreen films. Scroll down to travel horizontally.</p>
+            </div>
+
+            <!-- Horizontal Pin Container -->
+            <div class="horizontal-scroll-pin-wrap" id="horizontal-scroll-pin-wrap">
+                <div class="horizontal-scroll-track" id="horizontal-scroll-track">
+                    
+                    <!-- Showcase Item 1 (Weddings) -->
+                    <div class="horizontal-slide-card portfolio-item glass-card" data-video="https://player.vimeo.com/external/459389137.sd.mp4?s=8720e517a293fd739ad311e35907af7ec2091d35&profile_id=164&oauth2_token_id=57447761" data-client="Sophia & Ethan" data-desc="A dreamy luxury wedding film set in the sun-drenched hills of Tuscany, highlighting emotional vows, beautiful sunset silhouettes, and cinematic slow-motion steps.">
+                        <div class="slide-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80" alt="Eternity in Tuscany Wedding Film" class="parallax-bg-img">
+                            <div class="hover-overlay-glow"></div>
+                            <div class="play-indicator"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="slide-meta">
+                            <div class="slide-meta-top">
+                                <span class="slide-cat">Weddings</span>
+                                <span class="slide-specs">ARRI ALEXA MINI LF • COOKE ANAMORPHIC</span>
+                            </div>
+                            <h3 class="slide-title">Eternity in Tuscany</h3>
+                        </div>
+                    </div>
+
+                    <!-- Showcase Item 2 (Cinematic Reels) -->
+                    <div class="horizontal-slide-card portfolio-item glass-card" data-video="https://player.vimeo.com/external/517618991.sd.mp4?s=c8397a618e4c0296ab4df79e0f63b432e67cbdb1&profile_id=164&oauth2_token_id=57447761" data-client="Personal Creative" data-desc="A high-contrast cinematic portrait reel exploring the electric night streets of neon Tokyo, graded with signature cinematic teal and orange tones.">
+                        <div class="slide-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80" alt="Neon Tokyo Streets Cinematic Reel" class="parallax-bg-img">
+                            <div class="hover-overlay-glow"></div>
+                            <div class="play-indicator"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="slide-meta">
+                            <div class="slide-meta-top">
+                                <span class="slide-cat">Cinematic Reels</span>
+                                <span class="slide-specs">RED V-RAPTOR 8K • ZEISS PRIMES</span>
+                            </div>
+                            <h3 class="slide-title">Neon Tokyo Nights</h3>
+                        </div>
+                    </div>
+
+                    <!-- Showcase Item 3 (Brand Ads) -->
+                    <div class="horizontal-slide-card portfolio-item glass-card" data-video="https://player.vimeo.com/external/409226194.sd.mp4?s=d00e5720078972b9a715a31a980753443a539eb8&profile_id=164&oauth2_token_id=57447761" data-client="Apex Luxury Chronos" data-desc="Commercial brand campaign for a high-end luxury watch maker, expressing precision craftsmanship, speed, and status using micro-macro closeups.">
+                        <div class="slide-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80" alt="Apex Chronos Commercial Ad" class="parallax-bg-img">
+                            <div class="hover-overlay-glow"></div>
+                            <div class="play-indicator"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="slide-meta">
+                            <div class="slide-meta-top">
+                                <span class="slide-cat">Brand Ads</span>
+                                <span class="slide-specs">SONY FX9 • APEX MACRO PRIMES</span>
+                            </div>
+                            <h3 class="slide-title">The Edge of Speed</h3>
+                        </div>
+                    </div>
+
+                    <!-- Showcase Item 4 (Events) -->
+                    <div class="horizontal-slide-card portfolio-item glass-card" data-video="https://player.vimeo.com/external/391295982.sd.mp4?s=6c2ef5eb4f3de58a8a4f6cf1cf0cc41c09ff8e7b&profile_id=164&oauth2_token_id=57447761" data-client="Untamed Festival" data-desc="High-octane event after-movie for a major music festival, leveraging rhythmic cuts, smoke-light effects, and massive crowd engagement frames.">
+                        <div class="slide-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80" alt="Music Festival Aftermovie" class="parallax-bg-img">
+                            <div class="hover-overlay-glow"></div>
+                            <div class="play-indicator"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="slide-meta">
+                            <div class="slide-meta-top">
+                                <span class="slide-cat">Events</span>
+                                <span class="slide-specs">RED MONSTRO • DJI RONIN 4D</span>
+                            </div>
+                            <h3 class="slide-title">Untamed Rhythm</h3>
+                        </div>
+                    </div>
+
+                    <!-- Showcase Item 5 (Creative Projects) -->
+                    <div class="horizontal-slide-card portfolio-item glass-card" data-video="https://player.vimeo.com/external/484439813.sd.mp4?s=4de49cfa395e263d91cf9761e05d04586940026e&profile_id=164&oauth2_token_id=57447761" data-client="Contemporary Art Gallery" data-desc="An artistic shadow play and performance film mapping modern ballet under complex shadows and architectural lights, creating extreme emotional resonance.">
+                        <div class="slide-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80" alt="Chasing Shadows Creative Performance" class="parallax-bg-img">
+                            <div class="hover-overlay-glow"></div>
+                            <div class="play-indicator"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="slide-meta">
+                            <div class="slide-meta-top">
+                                <span class="slide-cat">Creative Projects</span>
+                                <span class="slide-specs">ARRI ALEXA 35 • SIGNATURE PRIMES</span>
+                            </div>
+                            <h3 class="slide-title">Chasing Shadows</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: SHOWREEL (WITH VIEWPORT BARS) -->
+        <section id="showreel" class="showreel-section">
+            <div class="showreel-video-bg">
+                <video autoplay loop muted playsinline class="showreel-video-preview" id="showreel-video-preview">
+                    <source src="https://player.vimeo.com/external/435674703.sd.mp4?s=6f41def7581dcef08ba856eeabcdc3e02f2603c7&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+                </video>
+                <div class="showreel-overlay"></div>
+            </div>
+
+            <!-- Viewfinder Overlay inside Showreel -->
+            <div class="camera-viewfinder">
+                <div class="vf-corner top-left"></div>
+                <div class="vf-corner top-right"></div>
+                <div class="vf-corner bottom-left"></div>
+                <div class="vf-corner bottom-right"></div>
+                
+                <div class="vf-top-bar">
+                    <span class="vf-rec-dot"><span class="dot-pulse"></span> PLAYBACK</span>
+                    <span class="vf-timecode" id="showreel-timecode">00:00:00:00</span>
+                    <span class="vf-fps">24.00 fps</span>
+                </div>
+                
+                <div class="vf-bottom-bar">
+                    <span class="vf-resolution">RAW COMP</span>
+                    <span class="vf-aspect">ANAMORPHIC</span>
+                </div>
+            </div>
+
+            <div class="showreel-content text-center">
+                <h3 class="showreel-tag">OFFICIAL 2026 CUT</h3>
+                <h2 class="showreel-title title-reveal animate-text">
+                    <span>Every Frame Has</span>
+                    <span>A Story</span>
+                </h2>
+                <div class="showreel-play-btn-wrap animate-on-scroll">
+                    <!-- Gold Pulsing Play Button -->
+                    <button class="showreel-play-btn magnet-target" id="showreel-play-btn" aria-label="Open Full Showreel">
+                        <div class="play-glow"></div>
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+                <p class="showreel-desc">Click to launch the 2026 master cinematic showreel.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 5: SERVICES (3D TILT CARDS) -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-tagline"><i class="fa-solid fa-sliders gold-text"></i> SERVICES</span>
+                    <h2 class="section-title title-reveal animate-text">
+                        <span>Elite Production</span>
+                    </h2>
+                    <p class="section-desc">Delivering unmatched optical quality and pacing dynamics to visual projects.</p>
+                </div>
+
+                <!-- 3D Tilt Card Services Grid -->
+                <div class="services-grid" id="services-grid">
+                    
+                    <!-- Service 1 -->
+                    <div class="service-card glass-card animate-on-scroll" data-tilt>
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-rings-wedding gold-text"></i>
+                        </div>
+                        <h3>Wedding Cinematography</h3>
+                        <p>High-fashion wedding documents styled like a theatrical release, complete with anamorphic cropping, precision audio layers, and bespoke color mapping.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass-card animate-on-scroll" data-tilt>
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-mountain gold-text"></i>
+                        </div>
+                        <h3>Pre-Wedding Films</h3>
+                        <p>Delicate couple narrative features set against cinematic misty ridges and golden hours. Dynamic framing crafted to translate absolute romance.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass-card animate-on-scroll" data-tilt>
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-bullhorn gold-text"></i>
+                        </div>
+                        <h3>Brand Commercials</h3>
+                        <p>High-end cinematic visuals for premium products and luxury lifestyles. Purposefully timed cuts designed to lock focus and elevate commercial conversions.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card glass-card animate-on-scroll" data-tilt>
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-mobile-screen gold-text"></i>
+                        </div>
+                        <h3>Instagram Reels</h3>
+                        <p>Mobile-first vertical (9:16) custom packages leveraging advanced lenses, rapid color grading transitions, and instant visual hooks.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card glass-card animate-on-scroll" data-tilt>
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-champagne-glass gold-text"></i>
+                        </div>
+                        <h3>Event Coverage</h3>
+                        <p>Dynamic event coverage mapping major music tours, luxury corporate launches, and fashion events using rapid kinetic cameras.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card glass-card animate-on-scroll" data-tilt>
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-wand-magic-sparkles gold-text"></i>
+                        </div>
+                        <h3>Post & Color Grading</h3>
+                        <p>Hollywood-standard post-production incorporating professional optical noise reductions, DaVinci Resolve grading, and intricate sound environments.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: WHY CHOOSE ME (TIMELINE) -->
+        <section id="why-choose-me" class="why-choose-me-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-tagline"><i class="fa-solid fa-chart-line gold-text"></i> STANDARDS</span>
+                    <h2 class="section-title title-reveal animate-text">
+                        <span>The Production Scale</span>
+                    </h2>
+                    <p class="section-desc">Why premium commercial labels and individual clients seek out SN Cinematic.</p>
+                </div>
+
+                <!-- Timeline Layout -->
+                <div class="timeline-container">
+                    <div class="timeline-line" id="timeline-line">
+                        <div class="timeline-progress" id="timeline-progress"></div>
+                    </div>
+
+                    <!-- Point 1 -->
+                    <div class="timeline-item left animate-on-scroll">
+                        <div class="timeline-dot"><i class="fa-solid fa-camera"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-number">01</span>
+                            <h3>True Cinematic Aesthetics</h3>
+                            <p>We avoid standard digital looks. Utilizing soft anamorphic frames, fast cinema prime lenses, and DaVinci Resolve grading pipelines, your footage is treated like a studio feature film.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 2 -->
+                    <div class="timeline-item right animate-on-scroll">
+                        <div class="timeline-dot"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-number">02</span>
+                            <h3>Detailed Storyboards</h3>
+                            <p>We execute pre-production storyboarding and pacing outlines. The focus remains heavily on capturing emotional subtext, sound layers, and rhythmic scene sequences.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div class="timeline-item left animate-on-scroll">
+                        <div class="timeline-dot"><i class="fa-solid fa-truck-fast"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-number">03</span>
+                            <h3>Expedited Production Loop</h3>
+                            <p>High-efficiency post-production pipelines ensure early structural cuts are delivered in weeks, not months, keeping editing projects completely transparent.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 4 -->
+                    <div class="timeline-item right animate-on-scroll">
+                        <div class="timeline-dot"><i class="fa-solid fa-film"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-number">04</span>
+                            <h3>Bespoke Color Gradients</h3>
+                            <p>Bespoke color mapping (LUTs) built to fit the exact thematic resonance of your event, wedding, or commercial product launch campaign.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 5 -->
+                    <div class="timeline-item left animate-on-scroll">
+                        <div class="timeline-dot"><i class="fa-solid fa-maximize"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-number">05</span>
+                            <h3>Dynamic Multi-Formats</h3>
+                            <p>Optimized widescreen cuts (2.39:1) for digital display, alongside high-energy 9:16 crops tailored specifically for modern Instagram Reels and digital marketing metrics.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 6 -->
+                    <div class="timeline-item right animate-on-scroll">
+                        <div class="timeline-dot"><i class="fa-regular fa-face-smile"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-number">06</span>
+                            <h3>Absolute Client Integration</h3>
+                            <p>Direct frame-accurate review loops ensuring final post-production steps seamlessly align with your individual design directives or corporate standards.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: CLIENT TESTIMONIALS (CAROUSEL SLIDER) -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-tagline"><i class="fa-regular fa-comments gold-text"></i> AUDIENCE VERDICT</span>
+                    <h2 class="section-title title-reveal animate-text">
+                        <span>Client Reviews</span>
+                    </h2>
+                    <p class="section-desc">Client impressions of our high-end cinematic execution.</p>
+                </div>
+
+                <!-- Testimonial Slider -->
+                <div class="testimonial-slider-container">
+                    <div class="testimonials-track" id="testimonials-track">
+                        
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide glass-card">
+                            <div class="testimonial-rating">
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                            </div>
+                            <p class="testimonial-quote">"Working with SN Cinematic was an absolute masterclass. They transformed our wedding into an authentic, anamorphic feature film. The pacing, light captures, and dynamic audio edits brought everyone to tears. Absolutely elite craftsmanship."</p>
+                            <div class="testimonial-client">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Sophia Rose" class="client-avatar">
+                                <div class="client-info">
+                                    <h4 class="client-name">Sophia & Ethan</h4>
+                                    <span class="client-type">Wedding Clients</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide glass-card">
+                            <div class="testimonial-rating">
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                            </div>
+                            <p class="testimonial-quote">"SN Cinematic handled our high-end watch commercial with supreme competence. The micro closeups, dark shadows, and sync with beats captured precision mechanics perfectly. Digital conversions jumped by 35% within days."</p>
+                            <div class="testimonial-client">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Vane" class="client-avatar">
+                                <div class="client-info">
+                                    <h4 class="client-name">Marcus Vane</h4>
+                                    <span class="client-type">Marketing Director, Apex Chronos</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide glass-card">
+                            <div class="testimonial-rating">
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                                <i class="fa-solid fa-star gold-text"></i>
+                            </div>
+                            <p class="testimonial-quote">"The energy SN Cinematic injected into our event recap was electric. Rhythmic cuts, lens flares, and light tracking syncs were exceptional. Editing turnaround was extremely fast. Truly our dedicated cinematic partner now."</p>
+                            <div class="testimonial-client">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Clara Vance" class="client-avatar">
+                                <div class="client-info">
+                                    <h4 class="client-name">Clara Vance</h4>
+                                    <span class="client-type">Director, Untamed Music Group</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Slide Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev magnet-target" id="slider-prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="slider-dots" id="slider-dots"></div>
+                        <button class="slider-arrow next magnet-target" id="slider-next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8: INSTAGRAM FEED -->
+        <section id="instagram" class="instagram-section">
+            <div class="container text-center">
+                <span class="section-tagline"><i class="fa-brands fa-instagram gold-text"></i> INSTAGRAM</span>
+                <h2 class="section-title title-reveal animate-text">
+                    <span>Director's Reel Feed</span>
+                </h2>
+                <a href="https://instagram.com/sn._.cinematic" target="_blank" class="instagram-username text-glow magnet-target">@sn._.cinematic</a>
+                <p class="section-desc">Explore behind-the-scenes grids, anamorphic lens audits, and editing breakdowns.</p>
+
+                <!-- Responsive Feed Grid -->
+                <div class="instagram-grid">
+                    
+                    <!-- Card 1 -->
+                    <a href="https://instagram.com/sn._.cinematic" target="_blank" class="instagram-post-card glass-card animate-on-scroll magnet-target">
+                        <img src="https://images.unsplash.com/photo-1542204172-e7052809f852?auto=format&fit=crop&w=600&q=80" alt="Cinematic Feed Item">
+                        <div class="post-overlay">
+                            <div class="post-likes"><i class="fa-solid fa-heart"></i> 1.2K</div>
+                            <div class="post-comments"><i class="fa-solid fa-comment"></i> 84</div>
+                            <span class="reel-badge"><i class="fa-solid fa-play"></i> REEL</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="https://instagram.com/sn._.cinematic" target="_blank" class="instagram-post-card glass-card animate-on-scroll magnet-target">
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=600&q=80" alt="Cinematic Feed Item">
+                        <div class="post-overlay">
+                            <div class="post-likes"><i class="fa-solid fa-heart"></i> 940</div>
+                            <div class="post-comments"><i class="fa-solid fa-comment"></i> 43</div>
+                            <span class="reel-badge"><i class="fa-solid fa-play"></i> REEL</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="https://instagram.com/sn._.cinematic" target="_blank" class="instagram-post-card glass-card animate-on-scroll magnet-target">
+                        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80" alt="Cinematic Feed Item">
+                        <div class="post-overlay">
+                            <div class="post-likes"><i class="fa-solid fa-heart"></i> 2.1K</div>
+                            <div class="post-comments"><i class="fa-solid fa-comment"></i> 124</div>
+                            <span class="reel-badge"><i class="fa-solid fa-play"></i> REEL</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a href="https://instagram.com/sn._.cinematic" target="_blank" class="instagram-post-card glass-card animate-on-scroll magnet-target">
+                        <img src="https://images.unsplash.com/photo-1533928298208-27ff66555d8d?auto=format&fit=crop&w=600&q=80" alt="Cinematic Feed Item">
+                        <div class="post-overlay">
+                            <div class="post-likes"><i class="fa-solid fa-heart"></i> 1.5K</div>
+                            <div class="post-comments"><i class="fa-solid fa-comment"></i> 65</div>
+                            <span class="reel-badge"><i class="fa-solid fa-play"></i> REEL</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9: CONTACT (BOOKING FORM PANEL) -->
+        <section id="contact" class="contact-section">
+            <div class="container grid-2">
+                <div class="contact-info-panel animate-on-scroll">
+                    <span class="section-tagline"><i class="fa-regular fa-envelope gold-text"></i> COLLABORATION</span>
+                    <h2 class="section-title title-reveal animate-text">
+                        <span>Let's Create</span>
+                        <span>Cinema</span>
+                    </h2>
+                    <p class="contact-desc">
+                        Ready to elevate your film project or commercial campaign? Fill out the project details or trigger a direct WhatsApp secure connection to schedule an alignment call.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-method glass-card">
+                            <div class="contact-icon"><i class="fa-brands fa-whatsapp gold-text"></i></div>
+                            <div>
+                                <h4>Instant Direct Booking</h4>
+                                <a href="https://wa.me/919999999999?text=Hi%20SN%20Cinematic,%20I'd%20love%20to%20collaborate%20on%20an%20upcoming%20shoot%20with%20you!" target="_blank" class="detail-link magnet-target">Secure WhatsApp Connection</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method glass-card">
+                            <div class="contact-icon"><i class="fa-regular fa-envelope-open gold-text"></i></div>
+                            <div>
+                                <h4>Direct Production Office</h4>
+                                <a href="mailto:hello@sncinematic.com" class="detail-link magnet-target">hello@sncinematic.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-trust-badge">
+                        <i class="fa-solid fa-shield-check gold-text"></i> Production Desk replies within 24 Hours
+                    </div>
+                </div>
+
+                <!-- Form Panel -->
+                <div class="contact-form-panel glass-card animate-on-scroll">
+                    <form id="cinematic-contact-form" autocomplete="on">
+                        <div class="form-group">
+                            <input type="text" id="form-name" required placeholder=" " autocomplete="name">
+                            <label for="form-name">Full Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="form-phone" required placeholder=" " autocomplete="tel">
+                            <label for="form-phone">Phone Number</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="form-email" required placeholder=" " autocomplete="email">
+                            <label for="form-email">Email Address</label>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="form-project-type" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="wedding">Wedding Film</option>
+                                <option value="pre-wedding">Pre-Wedding Shoot</option>
+                                <option value="brand">Brand Commercial</option>
+                                <option value="reels">Instagram Reels Package</option>
+                                <option value="event">Event Coverage</option>
+                                <option value="other">Creative Projects / Custom</option>
+                            </select>
+                            <label for="form-project-type" class="select-label">Project Type</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="form-message" rows="4" required placeholder=" "></textarea>
+                            <label for="form-message">Describe Your Vision...</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit magnet-target">
+                            Secure Director <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SECTION 10: FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-bg-glow"></div>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo magnet-target"><span class="gold-text">SN</span> CINEMATIC</a>
+                <p class="footer-tagline">"Turning Moments Into Cinema."</p>
+                <div class="footer-socials">
+                    <a href="https://instagram.com/sn._.cinematic" target="_blank" aria-label="Instagram" class="magnet-target"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/919999999999" target="_blank" aria-label="WhatsApp" class="magnet-target"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:hello@sncinematic.com" aria-label="Email" class="magnet-target"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#hero" class="magnet-target">Home</a></li>
+                    <li><a href="#about" class="magnet-target">Meet SN</a></li>
+                    <li><a href="#portfolio" class="magnet-target">Featured Work</a></li>
+                    <li><a href="#services" class="magnet-target">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#why-choose-me" class="magnet-target">Our Process</a></li>
+                    <li><a href="#testimonials" class="magnet-target">Client Reviews</a></li>
+                    <li><a href="#contact" class="magnet-target">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Stay Inspired</h4>
+                <p>Register to receive private releases, color-grading tables, and masterclass updates.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required aria-label="Newsletter Email">
+                    <button type="submit" aria-label="Subscribe" class="magnet-target"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container flex-space">
+                <p>&copy; 2026 SN Cinematic. All Rights Reserved.</p>
+                <p>Designed with Elite Luxury Aesthetics</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Widescreen Theatrical Lightbox Modal -->
+    <div class="cinematic-modal-overlay" id="cinematic-modal">
+        <div class="modal-close-btn magnet-target" id="modal-close" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></div>
+        <div class="modal-content-container">
+            <div class="video-aspect-wrapper">
+                <video controls autoplay class="modal-video-player" id="modal-video" src=""></video>
+            </div>
+            <div class="modal-meta-box">
+                <div class="modal-title-row">
+                    <h2 class="modal-project-title" id="modal-title">Project Title</h2>
+                    <span class="modal-client-badge" id="modal-client">Client Name</span>
+                </div>
+                <p class="modal-project-desc" id="modal-description">Detailed description of this premium cinematography piece.</p>
+                <a href="#contact" class="btn btn-primary modal-cta-btn magnet-target" id="modal-cta">Book Similar Shoot</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Sticky Floating Button -->
+    <a href="https://wa.me/919999999999?text=Hi%20SN%20Cinematic,%20I'd%20love%20to%20know%20more%20about%20your%20cinematic%20packages!" target="_blank" class="whatsapp-sticky magnet-target" aria-label="WhatsApp quick chat">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip-text">Chat with SN</span>
+    </a>
+
+    <!-- GSAP Core CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll CDN -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
